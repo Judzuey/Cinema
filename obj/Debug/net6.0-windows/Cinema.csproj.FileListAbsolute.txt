@@ -1,0 +1,17 @@
+C:\Users\Alejandra\Documents\Proyectos\Cinema\bin\Debug\net6.0-windows\Cinema.exe
+C:\Users\Alejandra\Documents\Proyectos\Cinema\bin\Debug\net6.0-windows\Cinema.deps.json
+C:\Users\Alejandra\Documents\Proyectos\Cinema\bin\Debug\net6.0-windows\Cinema.runtimeconfig.json
+C:\Users\Alejandra\Documents\Proyectos\Cinema\bin\Debug\net6.0-windows\Cinema.dll
+C:\Users\Alejandra\Documents\Proyectos\Cinema\bin\Debug\net6.0-windows\Cinema.pdb
+C:\Users\Alejandra\Documents\Proyectos\Cinema\obj\Debug\net6.0-windows\Cinema.Cinema.resources
+C:\Users\Alejandra\Documents\Proyectos\Cinema\obj\Debug\net6.0-windows\Cinema.csproj.GenerateResource.cache
+C:\Users\Alejandra\Documents\Proyectos\Cinema\obj\Debug\net6.0-windows\Cinema.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alejandra\Documents\Proyectos\Cinema\obj\Debug\net6.0-windows\Cinema.AssemblyInfoInputs.cache
+C:\Users\Alejandra\Documents\Proyectos\Cinema\obj\Debug\net6.0-windows\Cinema.AssemblyInfo.cs
+C:\Users\Alejandra\Documents\Proyectos\Cinema\obj\Debug\net6.0-windows\Cinema.csproj.CoreCompileInputs.cache
+C:\Users\Alejandra\Documents\Proyectos\Cinema\obj\Debug\net6.0-windows\Cinema.dll
+C:\Users\Alejandra\Documents\Proyectos\Cinema\obj\Debug\net6.0-windows\refint\Cinema.dll
+C:\Users\Alejandra\Documents\Proyectos\Cinema\obj\Debug\net6.0-windows\Cinema.pdb
+C:\Users\Alejandra\Documents\Proyectos\Cinema\obj\Debug\net6.0-windows\Cinema.genruntimeconfig.cache
+C:\Users\Alejandra\Documents\Proyectos\Cinema\obj\Debug\net6.0-windows\ref\Cinema.dll
+C:\Users\Alejandra\Documents\Proyectos\Cinema\obj\Debug\net6.0-windows\Cinema.Forms.AddForm.resources
