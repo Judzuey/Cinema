@@ -7,5 +7,11 @@
     <Compile Update="Forms\Cinema.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Ver.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -1,5 +1,4 @@
 ﻿using Cinema.Clases;
-using System.ComponentModel.Design;
 
 namespace Cinema.Forms
 {
@@ -16,7 +15,7 @@ namespace Cinema.Forms
         {
             InitializeComponent();
         }
-        
+
         private void btnAdd_Secundario(object sender, EventArgs e)
         {
             Pelicula p = new()
@@ -33,7 +32,11 @@ namespace Cinema.Forms
             dgvPeliculas.AutoGenerateColumns = true;
             dgvPeliculas.Enabled = false;
 
-            Limpiar();
+            erpValidar.Clear();
+            if (!Validate())
+            {
+                return;
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -62,6 +65,36 @@ namespace Cinema.Forms
         {
             Success = true;
             this.Close();
+        }
+
+        private bool Varlidar()
+        {
+            bool validate = true;
+            if (string.IsNullOrEmpty(txtName.Text))
+            {
+                erpValidar.SetError(txtName, "required");
+                validate = false;
+            }
+
+            if (string.IsNullOrEmpty(txtCategory.Text))
+            {
+                erpValidar.SetError(txtCategory, "required");
+                validate = false;
+            }
+
+            if (string.IsNullOrEmpty(txtClassification.Text))
+            {
+                erpValidar.SetError(txtClassification, "required");
+                validate = false;
+            }
+
+            if (string.IsNullOrEmpty(txtPrice.Text))
+            {
+                erpValidar.SetError(txtName, "required");
+                validate = false;
+            }
+
+            return validate;
         }
     }
 }

@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             btnAdd = new Button();
             btnEdit = new Button();
             dgvList = new DataGridView();
             btnDelete = new Button();
             btnView = new Button();
+            bindingSource = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)dgvList).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSource).BeginInit();
             SuspendLayout();
             // 
             // btnAdd
@@ -54,14 +57,22 @@
             btnEdit.TabIndex = 2;
             btnEdit.Text = "Editar";
             btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click;
             // 
             // dgvList
             // 
+            dgvList.AllowUserToAddRows = false;
+            dgvList.AllowUserToDeleteRows = false;
+            dgvList.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvList.Location = new Point(317, 42);
+            dgvList.MultiSelect = false;
             dgvList.Name = "dgvList";
+            dgvList.ReadOnly = true;
+            dgvList.RowHeadersVisible = false;
             dgvList.RowHeadersWidth = 51;
             dgvList.RowTemplate.Height = 29;
+            dgvList.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvList.Size = new Size(343, 433);
             dgvList.TabIndex = 5;
             // 
@@ -82,6 +93,7 @@
             btnView.TabIndex = 7;
             btnView.Text = "Ver";
             btnView.UseVisualStyleBackColor = true;
+            btnView.Click += btnView_Click;
             // 
             // Cinema
             // 
@@ -96,6 +108,7 @@
             Name = "Cinema";
             Text = "Cinema";
             ((System.ComponentModel.ISupportInitialize)dgvList).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSource).EndInit();
             ResumeLayout(false);
         }
 
@@ -105,5 +118,6 @@
         private DataGridView dgvList;
         private Button btnDelete;
         private Button btnView;
+        private BindingSource bindingSource;
     }
 }

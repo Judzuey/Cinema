@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             lblName = new Label();
             txtName = new TextBox();
             txtCategory = new TextBox();
@@ -40,7 +41,9 @@
             btnCancel = new Button();
             dgvPeliculas = new DataGridView();
             btnClose = new Button();
+            erpValidar = new ErrorProvider(components);
             ((System.ComponentModel.ISupportInitialize)dgvPeliculas).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)erpValidar).BeginInit();
             SuspendLayout();
             // 
             // lblName
@@ -136,6 +139,7 @@
             // dgvPeliculas
             // 
             dgvPeliculas.AllowUserToOrderColumns = true;
+            dgvPeliculas.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvPeliculas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvPeliculas.Enabled = false;
             dgvPeliculas.Location = new Point(559, 65);
@@ -154,6 +158,10 @@
             btnClose.Text = "Cerrar";
             btnClose.UseVisualStyleBackColor = true;
             btnClose.Click += btnClose_Click;
+            // 
+            // erpValidar
+            // 
+            erpValidar.ContainerControl = this;
             // 
             // AddForm
             // 
@@ -176,6 +184,7 @@
             Name = "AddForm";
             Text = "AddForm";
             ((System.ComponentModel.ISupportInitialize)dgvPeliculas).EndInit();
+            ((System.ComponentModel.ISupportInitialize)erpValidar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -194,5 +203,6 @@
         private Button btnCancel;
         private Button btnClose;
         public DataGridView dgvPeliculas;
+        private ErrorProvider erpValidar;
     }
 }
